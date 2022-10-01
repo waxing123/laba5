@@ -35,7 +35,7 @@ function App() {
         <h1>My TODO App</h1>
             <div>
                 <span>Item count: <span>{todos.length}</span></span>
-                <br />
+                {'\n'}
                 <span>Unchecked count: <span>{todos.filter(todo => todo.checked == false).length}</span></span>
             </div>
         <button onClick={addTodo}>New TODO</button>
